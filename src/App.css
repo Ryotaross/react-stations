@@ -1,0 +1,46 @@
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  }
+body{
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.top{
+  background-color:#c0c0c0;;
+  font-size: 2rem;
+  text-align: center;
+}
+.main{
+  margin:20px;
+}
+.leftMenu{
+  display: flex;
+  float: left;
+  width: 750px;
+  height: 400px;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center 
+}
+.rightMenu{
+  float: right;
+}
+.photo{
+  display: block;
+  width: 550px;
+  height: 100%;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+.btn{
+  float: right;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
