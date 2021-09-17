@@ -18,8 +18,8 @@ body{
 .leftMenu{
   display: flex;
   float: left;
-  width: 50rem;
-  height: 400px;
+  width: 30em;
+  height: 15em;
   font-size: 1.5rem;
   align-items: center;
   justify-content: center 
@@ -29,16 +29,16 @@ body{
 }
 .photo{
   display: block;
-  width: 550px;
+  width: 30em;
   height: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   object-fit: contain;
 }
 .btn{
   float: right;
   appearance: none;
   border: 0;
-  border-radius: 5px;
+  border-radius: 1px;
   background: #4676D7;
   color: #fff;
   padding: 8px 16px;

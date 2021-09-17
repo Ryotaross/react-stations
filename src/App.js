@@ -21,7 +21,6 @@ const handleClick = () => {
         setDogUrl(dog);
       },
       (error) => {
-        console.log("aaa");
       }
     )
 }
