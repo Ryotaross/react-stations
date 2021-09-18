@@ -20,23 +20,42 @@ const handleClick = () => {
         const dog = result.message
         setDogUrl(dog);
       },
+    ).catch(
       (error) => {
       }
     )
 }
 
+function Header(props){
+  return(
+    <header className="top">
+      {props.title}
+    </header>
+  )
+}
+
+function Description(props){
+  return(
+    <div className="main">
+      <p className="leftMenu">犬の画像を表示するサイトです</p>
+      <div className="rightMenu">
+        <DogImage dogUrl = {dogUrl} />
+        <button className="btn" onClick={handleClick}>更新</button>
+      </div>
+    </div>
+  )
+}
+
+function DogImage(props){
+  return(
+    <img className="photo" src={props.dogUrl}></img>
+  )
+}
+
   return (
     <div>
-      <header className="top">
-        Dogアプリ
-      </header>
-      <div className="clearfix main">
-        <p className="leftMenu">犬の画像を表示するサイトです</p>
-        <div className="rightMenu">
-          <img className="photo" src={dogUrl}></img>
-          <button className="btn" onClick={handleClick}>更新</button>
-        </div>
-      </div>
+      <Header title="Dogアプリ" />
+      <Description />
     </div>
   );
 }
