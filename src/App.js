@@ -9,6 +9,15 @@ import './App.css'
  * 
  * @type {React.FC}
  */
+
+ function Header(props){
+  return(
+    <header className="top">
+      {props.title}
+    </header>
+  )
+}
+
 export const App = () => {
   const [dogUrl,setDogUrl] = useState("https://images.dog.ceo/breeds/terrier-scottish/n02097298_91.jpg");
 
@@ -26,13 +35,7 @@ const handleClick = () => {
     )
 }
 
-function Header(props){
-  return(
-    <header className="top">
-      {props.title}
-    </header>
-  )
-}
+
 
 function Description(props){
   return(
