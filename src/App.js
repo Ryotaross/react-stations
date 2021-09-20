@@ -6,6 +6,7 @@ import { render } from 'react';
 import './App.css'
 import { Header } from './Header.js'
 import { Description } from './Description';
+import { DogListContainer } from './DogListContainer';
 
 /**
  * 
@@ -33,6 +34,7 @@ const handleClick = () => {
     <div>
       <Header title="Dogアプリ" />
       <Description url={dogUrl} handleClick={handleClick}/>
+      <DogListContainer />
     </div>
   );
 }
